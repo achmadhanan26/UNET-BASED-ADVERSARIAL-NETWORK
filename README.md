@@ -1,7 +1,7 @@
 # Tensorflow-based Deep Learning Implementations for COVID-19 Lung X-Ray Image Analysis
 
 ## Dataset Source
-[X-Ray Lung COVID-19 Open-source Dataset] (https://github.com/ieee8023/covid-chestxray-dataset)
+[X-Ray Lung COVID-19 Open-source Dataset](https://github.com/ieee8023/covid-chestxray-dataset)
 
 **UNET BASED ADVERSARIAL NETWORK FOR SEGMENTING GROUND GLASS OPACITY FROM COVID-19 LUNG X-RAY IMAGE**
 
