@@ -1,6 +1,4 @@
-# UNET-Based Adversarial Network Implementations for COVID-19 Lung X-Ray Image Analysis using Tensorflow
-
-
+# Tensorflow-based Deep Learning Implementations for COVID-19 Lung X-Ray Image Analysis
 
 **UNET BASED ADVERSARIAL NETWORK FOR SEGMENTING GROUND GLASS OPACITY FROM COVID-19 LUNG X-RAY IMAGE**
 
