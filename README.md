@@ -63,18 +63,20 @@ The overall learning result is good enough but takes so much time to do a single
 * And here is how the sceme goes on:
 ![arsitektur UNET-Page-7 drawio](https://user-images.githubusercontent.com/72918677/172334625-1c27fdaa-45be-46cb-a6eb-802128331cd1.png)
 
+* For the GUI interface, im using Tkinter GUI which looks like this:
+![gui note 1](https://user-images.githubusercontent.com/72918677/172374015-44ab6d3c-51e7-49e4-9b9a-3d7a3980fc4a.JPG)
+
 For the hyperparameter tuning, i did some experiment which one goes for the best result. Here is the photo i took while trying to tune the hyperparameter with these set ups:
 * Batch size : 17
 * Epoch      : 51
 * Learning rate : 0.0001
 * Lambda     : 5
 
-* Here is the result based on the corresponding image segmentation:
-![augment ep 50 adam sgd_grph0](https://user-images.githubusercontent.com/72918677/172367536-8af81ecc-48d8-4c15-9037-09afe4694258.JPG)
-![augment ep 50 adam sgd_grph](https://user-images.githubusercontent.com/72918677/172367521-fa5b9f8e-6ac0-41e8-abf6-8d84a6c447a5.JPG)
+* Here is the result based on the Dice Coefficient and the corresponding image segmentation:
+![Capture](https://user-images.githubusercontent.com/72918677/172372767-44ae94f6-7ffd-4b50-8948-76ad76580dc0.JPG)
 
 * And here is the result graphically:
-![augment ep 50 adam sgd](https://user-images.githubusercontent.com/72918677/172367543-80c66b38-bb43-4820-a6e6-849dc163788e.JPG)
+![Capture2](https://user-images.githubusercontent.com/72918677/172372781-b1e14062-c7c0-4c06-8325-93415eb08946.JPG)
 
 ## Refferences
 * Josep Paul Cohen paper : https://arxiv.org/abs/2003.11597
