@@ -21,7 +21,8 @@ Another motivation in conducting this research is to achieve my bachelor degree 
 The X-ray COVID-19 images dataset used in this research acquired from an open-source Github manage by https://github.com/ieee8023 using python programming library from https://github.com/mlmed/torchxrayvision.
 
 #### X-Ray COVID-19 Dataset
-![alt text](https://raw.githubusercontent.com/ieee8023/covid-chestxray-dataset/master/images/000001-1.jpg)
+![dataset_raw1](https://user-images.githubusercontent.com/72918677/172343825-635f6ccf-61be-4cc1-a916-052dfaa064aa.PNG)
+![dataset_raw2](https://user-images.githubusercontent.com/72918677/172343804-e669b6cc-7e98-450c-8c20-91d5ec7e3554.PNG)
 * [Raw X-Ray Lung COVID-19 Open-source Dataset](https://github.com/ieee8023/covid-chestxray-dataset)
 
 #### Ground Truth Segmentation
