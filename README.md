@@ -15,7 +15,7 @@ COVID-19 is a virus that causes outbreaks around the world today. The virus atta
 ## Motivation
 Lungs X-Ray images of COVID-19 hold informations that related to the clinical condition of patient, where there are pathology objects that can be detected in COVID-19 patients. Detection of pathological objects is done manually by radiologists so that their application relies on radiologist observation and is limited to radiological availability. Therefore, a study is currently needed on the automatic lung X-Ray segmentation method based on deep learning by using the Convolutional Neural Network to segment the object of ground glass opacity pathology. 
 
-Another motivation in conducting this research is to achieve my bachelor degree in Biomedical Engineering at Sepuluh Nopember Institut of Technology, Surabaya 
+Another motivation in conducting this research is to achieve my bachelor degree in Biomedical Engineering at Sepuluh Nopember Institut of Technology, Surabaya, Indonesia. 
 
 ## Dataset 
 The X-ray COVID-19 images dataset used in this research acquired from an open-source Github manage by https://github.com/ieee8023 using python programming library from https://github.com/mlmed/torchxrayvision.
