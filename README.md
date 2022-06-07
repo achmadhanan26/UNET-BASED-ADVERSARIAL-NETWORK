@@ -1,6 +1,7 @@
 # Tensorflow-based Deep Learning Implementations for COVID-19 Lung X-Ray Image Analysis
 
 ## Dataset Source
+![alt text](https://raw.githubusercontent.com/ieee8023/covid-chestxray-dataset/master/images/000001-1.jpg)
 * [Raw X-Ray Lung COVID-19 Open-source Dataset](https://github.com/ieee8023/covid-chestxray-dataset)
 
 ## Ground Truth Segmentation
