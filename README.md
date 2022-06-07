@@ -7,11 +7,11 @@ COVID-19 is a virus that causes outbreaks around the world today. The virus atta
 ## Motivation
 
 ## Dataset Source
-## X-Ray COVID-19 Dataset
+### X-Ray COVID-19 Dataset
 ![alt text](https://raw.githubusercontent.com/ieee8023/covid-chestxray-dataset/master/images/000001-1.jpg)
 * [Raw X-Ray Lung COVID-19 Open-source Dataset](https://github.com/ieee8023/covid-chestxray-dataset)
 
-## Ground Truth Segmentation
+### Ground Truth Segmentation
 ![alt text](https://user-images.githubusercontent.com/66736646/89189135-60f08000-d5c1-11ea-87cc-bb10b8bb635a.gif)
 * [Ground Glass Opacities Annotation](https://github.com/GeneralBlockchain/covid-19-chest-xray-segmentations-dataset#download-the-dataset)
 
