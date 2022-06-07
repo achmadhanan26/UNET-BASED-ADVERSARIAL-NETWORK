@@ -46,19 +46,19 @@ This step is urgently needed before doing any machine learning processing! the r
 
 ## Generative Adversarial Network
 GAN network consists of 2 deep learning network that works in opposite way to another, such as: the first network is trained to create or generate the segmentation based on the given ground truth, therefore it is called the "Generator Network". Meanwhile the second network is, called "Discriminator Network", trained to differentiate the output segmentation from the "Generator Network" from the actual ground truth image, it is done by setting up the new learning function with goals to find the differentiations for each pixel. 
-Here is the Generator Network i use :
+* Here is the Generator Network i use :
 
 ![arsitektur UNET](https://user-images.githubusercontent.com/72918677/172331559-0c140da1-5c21-4669-9162-869f61b73023.png)
 
-It consists of a couple of convolutional blocks:
+* It consists of a couple of convolutional blocks:
 
 ![blok konvolusi](https://user-images.githubusercontent.com/72918677/172331579-6d0e980c-099e-4290-af75-bafc6b8163de.png)
 
-I modified the original code from the tensorflow tutorial from [here](https://www.tensorflow.org/tutorials/generative/pix2pix). And here is how the  Discriminator Network i use for this research: 
+* I modified the original code from the tensorflow tutorial from [here](https://www.tensorflow.org/tutorials/generative/pix2pix). And here is how the  Discriminator Network i use for this research: 
 
 ![kritik network](https://user-images.githubusercontent.com/72918677/172331628-bf6df294-df14-4e6f-9801-1b9e0aecd36e.png)
 
-It consists of a couple of residual blocks:
+* It consists of a couple of residual blocks:
 ![blok residual](https://user-images.githubusercontent.com/72918677/172331616-b038455f-0b12-4b23-ad35-4bcfb713866e.png)
 
 ## Result
@@ -71,10 +71,10 @@ For the hyperparameter tuning, i did some experiment which one goes for the best
 * Learning rate : 0.0001
 * Lambda     : 5
 
-Here is the result based on confussion matrix and the corresponding image segmentation :
+* Here is the result based on confussion matrix and the corresponding image segmentation :
 ![Capture](https://user-images.githubusercontent.com/72918677/172334777-da599bc8-2519-4892-9039-6908444805de.JPG)
 
-And here is the result by graphic :
+* And here is the result by graphic :
 ![eval result](https://user-images.githubusercontent.com/72918677/172334792-813065fb-7665-4648-8d0f-c92d0a72cf43.JPG)
 
 ## Refferences
