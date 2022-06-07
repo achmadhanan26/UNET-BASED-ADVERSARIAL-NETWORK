@@ -18,7 +18,7 @@ Lungs X-Ray images of COVID-19 hold informations that related to the clinical co
 Another motivation in conducting this research is to achieve my bachelor degree in Biomedical Engineering at Sepuluh Nopember Institut of Technology, Surabaya, Indonesia. 
 
 ## Dataset 
-The X-ray COVID-19 images dataset used in this research acquired from an open-source Github manage by [Joseph Paul Cohen](https://github.com/ieee8023) using python programming library from [torchxrayvision](https://github.com/mlmed/torchxrayvision).
+The X-ray COVID-19 images dataset used in this research origins from Github manage by [Joseph Paul Cohen](https://github.com/ieee8023) which intended for research purposes and obtained by using python programming library from [torchxrayvision](https://github.com/mlmed/torchxrayvision).
 
 #### X-Ray COVID-19 Dataset
  ![dataset_raw1](https://user-images.githubusercontent.com/72918677/172343825-635f6ccf-61be-4cc1-a916-052dfaa064aa.PNG)
