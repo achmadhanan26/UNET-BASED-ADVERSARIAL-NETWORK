@@ -64,16 +64,17 @@ The overall learning result is good enough but takes so much time to do a single
 ![arsitektur UNET-Page-7 drawio](https://user-images.githubusercontent.com/72918677/172334625-1c27fdaa-45be-46cb-a6eb-802128331cd1.png)
 
 For the hyperparameter tuning, i did some experiment which one goes for the best result. Here is the photo i took while trying to tune the hyperparameter with these set ups:
-* Batch size : 15
-* Epoch      : 20
+* Batch size : 17
+* Epoch      : 51
 * Learning rate : 0.0001
 * Lambda     : 5
 
-* Here is the result based on confussion matrix and the corresponding image segmentation:
-![Capture](https://user-images.githubusercontent.com/72918677/172334777-da599bc8-2519-4892-9039-6908444805de.JPG)
+* Here is the result based on the corresponding image segmentation:
+![augment ep 50 adam sgd_grph0](https://user-images.githubusercontent.com/72918677/172367536-8af81ecc-48d8-4c15-9037-09afe4694258.JPG)
+![augment ep 50 adam sgd_grph](https://user-images.githubusercontent.com/72918677/172367521-fa5b9f8e-6ac0-41e8-abf6-8d84a6c447a5.JPG)
 
 * And here is the result graphically:
-![eval result](https://user-images.githubusercontent.com/72918677/172334792-813065fb-7665-4648-8d0f-c92d0a72cf43.JPG)
+![augment ep 50 adam sgd](https://user-images.githubusercontent.com/72918677/172367543-80c66b38-bb43-4820-a6e6-849dc163788e.JPG)
 
 ## Refferences
 * Josep Paul Cohen paper : https://arxiv.org/abs/2003.11597
