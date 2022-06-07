@@ -30,11 +30,11 @@ The X-ray COVID-19 images dataset used in this research acquired from an open-so
 
 ## Image Pre-Processing
 This step is urgently needed before doing any machine learning processing! the reason is becaused the dataset used is obtained from open-source and did not has standards, therefore it causes some main problems such as:
-* Different images size and resolution
+* Different images size and resolution 
 * Different images quality taken
-* not to mention types of noises will have in each of the images
+* Abnormalities in X-Ray COVID-19 images shown by extreme value of image histogram
 * the annotation segmentation by https://github.com/GeneralBlockchain/covid-19-chest-xray-segmentations-dataset only covers the ground glass opacity object for each images. it cant be use for ground truth segmentation yet.  
-* 
+
 ![prepross](https://user-images.githubusercontent.com/72918677/172329946-cf2c4a66-10d7-4881-9f91-99b5cefd5056.png)
 
 ![tes5 drawio](https://user-images.githubusercontent.com/72918677/172331381-8dbea8ca-3296-42b3-972b-a2571e5890e7.png)
