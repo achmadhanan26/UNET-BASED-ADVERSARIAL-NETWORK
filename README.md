@@ -21,41 +21,38 @@ Another motivation in conducting this research is to achieve my bachelor degree 
 The X-ray COVID-19 images dataset used in this research acquired from an open-source Github manage by https://github.com/ieee8023 using python programming library from https://github.com/mlmed/torchxrayvision.
 
 #### X-Ray COVID-19 Dataset
-![dataset_raw1](https://user-images.githubusercontent.com/72918677/172343825-635f6ccf-61be-4cc1-a916-052dfaa064aa.PNG)
-![dataset_raw2](https://user-images.githubusercontent.com/72918677/172343804-e669b6cc-7e98-450c-8c20-91d5ec7e3554.PNG)
+ ![dataset_raw1](https://user-images.githubusercontent.com/72918677/172343825-635f6ccf-61be-4cc1-a916-052dfaa064aa.PNG)
+ ![dataset_raw2](https://user-images.githubusercontent.com/72918677/172343804-e669b6cc-7e98-450c-8c20-91d5ec7e3554.PNG)
 * [Raw X-Ray Lung COVID-19 Open-source Dataset](https://github.com/ieee8023/covid-chestxray-dataset)
 
 #### Ground Truth Segmentation
-![rawdatasettarget1](https://user-images.githubusercontent.com/72918677/172342834-4567e6a4-e0fc-4eb0-83f0-be39b64589ac.PNG)
-![rawdatasettarget2](https://user-images.githubusercontent.com/72918677/172342939-720a1ffa-42c7-4720-a506-032fa3f58430.PNG)
+ ![rawdatasettarget1](https://user-images.githubusercontent.com/72918677/172342834-4567e6a4-e0fc-4eb0-83f0-be39b64589ac.PNG)
+ ![rawdatasettarget2](https://user-images.githubusercontent.com/72918677/172342939-720a1ffa-42c7-4720-a506-032fa3f58430.PNG)
 * [Ground Glass Opacities Annotation](https://github.com/GeneralBlockchain/covid-19-chest-xray-segmentations-dataset#download-the-dataset)
 
 ## Image Pre-Processing
 This step is urgently needed before doing any machine learning processing! the reason is becaused the dataset used is obtained from open-source and did not has standards, therefore it causes some main problems such as:
 * Abnormalities in X-Ray COVID-19 images shown by extreme value of image histogram
+ ![tes5 drawio](https://user-images.githubusercontent.com/72918677/172331381-8dbea8ca-3296-42b3-972b-a2571e5890e7.png)
 
-![tes5 drawio](https://user-images.githubusercontent.com/72918677/172331381-8dbea8ca-3296-42b3-972b-a2571e5890e7.png)
-* The annotation segmentation by https://github.com/GeneralBlockchain/covid-19-chest-xray-segmentations-dataset only covers the ground glass opacity object for each images. it cant be use for ground truth segmentation yet.  
-
+* The annotation segmentation by https://github.com/GeneralBlockchain/covid-19-chest-xray-segmentations-dataset only covers the ground glass opacity object for each images. it cant be use for ground truth segmentation yet.
 ![tes4 drawio](https://user-images.githubusercontent.com/72918677/172342753-5e26bb24-e987-4592-9159-69448c9337fd.png)
 
 * The amount of image data presented is very small. Therefore, it needs to implement data augmentation algorithm to avoid failure in learning.
-
 ![prepross](https://user-images.githubusercontent.com/72918677/172329946-cf2c4a66-10d7-4881-9f91-99b5cefd5056.png)
+
 * Different images size and resolution needs to be resizes before the learning.
 
 ## Generative Adversarial Network
 GAN network consists of 2 deep learning network that works in opposite way to another, such as: the first network is trained to create or generate the segmentation based on the given ground truth, therefore it is called the "Generator Network". Meanwhile the second network is, called "Discriminator Network", trained to differentiate the output segmentation from the "Generator Network" from the actual ground truth image, it is done by setting up the new learning function with goals to find the differentiations for each pixel. 
 * Here is the Generator Network i use :
-
 ![arsitektur UNET](https://user-images.githubusercontent.com/72918677/172331559-0c140da1-5c21-4669-9162-869f61b73023.png)
 
 * It consists of a couple of convolutional blocks:
-
 ![blok konvolusi](https://user-images.githubusercontent.com/72918677/172331579-6d0e980c-099e-4290-af75-bafc6b8163de.png)
 
-* I modified the original code from the tensorflow tutorial from [here](https://www.tensorflow.org/tutorials/generative/pix2pix). And here is how the  Discriminator Network i use for this research: 
-
+I modified the original code from the tensorflow tutorial from [here](https://www.tensorflow.org/tutorials/generative/pix2pix). 
+* And here is how the  Discriminator Network i use for this research: 
 ![kritik network](https://user-images.githubusercontent.com/72918677/172331628-bf6df294-df14-4e6f-9801-1b9e0aecd36e.png)
 
 * It consists of a couple of residual blocks:
@@ -64,7 +61,6 @@ GAN network consists of 2 deep learning network that works in opposite way to an
 ## Result
 The overall learning result is good enough but takes so much time to do a single epoch, so far i managed to learn by using 50 epoch with core i-7 processor PC. For this research, i divided the whole pre-processed data into 90% for training purpose and 10% for testing purpose. Notice that i didnt use any validation algorithm because it would took longer time to complete. 
 * And here is how the sceme goes on:
-
 ![arsitektur UNET-Page-7 drawio](https://user-images.githubusercontent.com/72918677/172334625-1c27fdaa-45be-46cb-a6eb-802128331cd1.png)
 
 For the hyperparameter tuning, i did some experiment which one goes for the best result. Here is the photo i took while trying to tune the hyperparameter with these set ups:
@@ -73,10 +69,10 @@ For the hyperparameter tuning, i did some experiment which one goes for the best
 * Learning rate : 0.0001
 * Lambda     : 5
 
-* Here is the result based on confussion matrix and the corresponding image segmentation :
+* Here is the result based on confussion matrix and the corresponding image segmentation:
 ![Capture](https://user-images.githubusercontent.com/72918677/172334777-da599bc8-2519-4892-9039-6908444805de.JPG)
 
-* And here is the result graphically :
+* And here is the result graphically:
 ![eval result](https://user-images.githubusercontent.com/72918677/172334792-813065fb-7665-4648-8d0f-c92d0a72cf43.JPG)
 
 ## Refferences
