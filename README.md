@@ -29,7 +29,12 @@ The X-ray COVID-19 images dataset used in this research acquired from an open-so
 * [Ground Glass Opacities Annotation](https://github.com/GeneralBlockchain/covid-19-chest-xray-segmentations-dataset#download-the-dataset)
 
 ## Image Pre-Processing
-
+This step is urgently needed before doing any machine learning processing! the reason is becaused the dataset used is obtained from open-source and did not has standards, therefore it causes some main problems such as:
+* Different images size and resolution
+* Different images quality taken
+* not to mention types of noises will have in each of the images
+* the annotation segmentation by https://github.com/GeneralBlockchain/covid-19-chest-xray-segmentations-dataset only covers the ground glass opacity object for each images. it cant be use for ground truth segmentation yet.  
+* 
 ![prepross](https://user-images.githubusercontent.com/72918677/172329946-cf2c4a66-10d7-4881-9f91-99b5cefd5056.png)
 
 ![tes5 drawio](https://user-images.githubusercontent.com/72918677/172331381-8dbea8ca-3296-42b3-972b-a2571e5890e7.png)
@@ -41,12 +46,16 @@ The X-ray COVID-19 images dataset used in this research acquired from an open-so
 ![blok residual](https://user-images.githubusercontent.com/72918677/172331616-b038455f-0b12-4b23-ad35-4bcfb713866e.png)
 
 ## Result
-
+![arsitektur UNET-Page-7 drawio](https://user-images.githubusercontent.com/72918677/172334625-1c27fdaa-45be-46cb-a6eb-802128331cd1.png)
+![Capture](https://user-images.githubusercontent.com/72918677/172334777-da599bc8-2519-4892-9039-6908444805de.JPG)
+![eval result](https://user-images.githubusercontent.com/72918677/172334792-813065fb-7665-4648-8d0f-c92d0a72cf43.JPG)
 
 ## Refferences
-Josep Paul Cohen paper : https://arxiv.org/abs/2003.11597
-pix2pix GAN paper : https://arxiv.org/abs/1611.07004
-U-net paper : https://arxiv.org/abs/1505.04597
+* Josep Paul Cohen paper : https://arxiv.org/abs/2003.11597
+* BlockChain Github : https://github.com/GeneralBlockchain/covid-19-chest-xray-segmentations-dataset#download-the-dataset
+* pix2pix GAN paper : https://arxiv.org/abs/1611.07004
+* U-net paper : https://arxiv.org/abs/1505.04597
+* 
 ## Contact us
 * Email: achmad.hanan26@gmail.com
 
