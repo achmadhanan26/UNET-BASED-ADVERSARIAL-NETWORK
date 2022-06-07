@@ -62,7 +62,9 @@ GAN network consists of 2 deep learning network that works in opposite way to an
 ![blok residual](https://user-images.githubusercontent.com/72918677/172331616-b038455f-0b12-4b23-ad35-4bcfb713866e.png)
 
 ## Result
-The overall learning result is good enough but takes so much time to do a single epoch, so far i managed to learn by using 50 epoch with core i-7 processor PC. For this research, i divided the whole pre-processed data into 90% for training purpose and 10% for testing purpose. Notice that i didnt use any validation algorithm because it would took longer time to complete. And here is how the sceme goes on:
+The overall learning result is good enough but takes so much time to do a single epoch, so far i managed to learn by using 50 epoch with core i-7 processor PC. For this research, i divided the whole pre-processed data into 90% for training purpose and 10% for testing purpose. Notice that i didnt use any validation algorithm because it would took longer time to complete. 
+* And here is how the sceme goes on:
+
 ![arsitektur UNET-Page-7 drawio](https://user-images.githubusercontent.com/72918677/172334625-1c27fdaa-45be-46cb-a6eb-802128331cd1.png)
 
 For the hyperparameter tuning, i did some experiment which one goes for the best result. Here is the photo i took while trying to tune the hyperparameter with these set ups:
@@ -74,7 +76,7 @@ For the hyperparameter tuning, i did some experiment which one goes for the best
 * Here is the result based on confussion matrix and the corresponding image segmentation :
 ![Capture](https://user-images.githubusercontent.com/72918677/172334777-da599bc8-2519-4892-9039-6908444805de.JPG)
 
-* And here is the result by graphic :
+* And here is the result graphically :
 ![eval result](https://user-images.githubusercontent.com/72918677/172334792-813065fb-7665-4648-8d0f-c92d0a72cf43.JPG)
 
 ## Refferences
