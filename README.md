@@ -3,7 +3,9 @@
 ## Dataset Source
 * [Raw X-Ray Lung COVID-19 Open-source Dataset](https://github.com/ieee8023/covid-chestxray-dataset)
 
-* [Ground Glass Opacities Annotation for Ground Truth Image](https://github.com/GeneralBlockchain/covid-19-chest-xray-segmentations-dataset#download-the-dataset)
+## Ground Truth Segmentation
+* [Ground Glass Opacities Annotation](https://github.com/GeneralBlockchain/covid-19-chest-xray-segmentations-dataset#download-the-dataset)
+
 
 **UNET BASED ADVERSARIAL NETWORK FOR SEGMENTING GROUND GLASS OPACITY FROM COVID-19 LUNG X-RAY IMAGE**
 
