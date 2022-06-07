@@ -23,12 +23,12 @@ The X-ray COVID-19 images dataset used in this research acquired from an open-so
 #### X-Ray COVID-19 Dataset
 ![dataset_raw1](https://user-images.githubusercontent.com/72918677/172343825-635f6ccf-61be-4cc1-a916-052dfaa064aa.PNG)
 ![dataset_raw2](https://user-images.githubusercontent.com/72918677/172343804-e669b6cc-7e98-450c-8c20-91d5ec7e3554.PNG)
-* [Raw X-Ray Lung COVID-19 Open-source Dataset](https://github.com/ieee8023/covid-chestxray-dataset)
+* source: [Raw X-Ray Lung COVID-19 Open-source Dataset](https://github.com/ieee8023/covid-chestxray-dataset)
 
 #### Ground Truth Segmentation
 ![rawdatasettarget1](https://user-images.githubusercontent.com/72918677/172342834-4567e6a4-e0fc-4eb0-83f0-be39b64589ac.PNG)
 ![rawdatasettarget2](https://user-images.githubusercontent.com/72918677/172342939-720a1ffa-42c7-4720-a506-032fa3f58430.PNG)
-* [Ground Glass Opacities Annotation](https://github.com/GeneralBlockchain/covid-19-chest-xray-segmentations-dataset#download-the-dataset)
+* Source:[Ground Glass Opacities Annotation](https://github.com/GeneralBlockchain/covid-19-chest-xray-segmentations-dataset#download-the-dataset)
 
 ## Image Pre-Processing
 This step is urgently needed before doing any machine learning processing! the reason is becaused the dataset used is obtained from open-source and did not has standards, therefore it causes some main problems such as:
@@ -37,8 +37,8 @@ This step is urgently needed before doing any machine learning processing! the r
 * Different images size and resolution needs to be resizes first
 * The amount of image data presented is very small. Therefore, it needs to implement data augmentation algorithm to avoid failure in learning.
 
+![rawdatasettarget1](https://user-images.githubusercontent.com/72918677/172342834-4567e6a4-e0fc-4eb0-83f0-be39b64589ac.PNG)
 ![prepross](https://user-images.githubusercontent.com/72918677/172329946-cf2c4a66-10d7-4881-9f91-99b5cefd5056.png)
-
 ![tes5 drawio](https://user-images.githubusercontent.com/72918677/172331381-8dbea8ca-3296-42b3-972b-a2571e5890e7.png)
 
 ## Generative Adversarial Network
