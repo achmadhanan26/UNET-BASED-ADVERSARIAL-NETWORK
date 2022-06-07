@@ -7,6 +7,7 @@ COVID-19 is a virus that causes outbreaks around the world today. The virus atta
 * Dataset
 * Image Pre-processing
 * Generative Adversarial Network
+* Result
 * Refferences
 * Contact Us
 
@@ -28,12 +29,24 @@ The X-ray COVID-19 images dataset used in this research acquired from an open-so
 * [Ground Glass Opacities Annotation](https://github.com/GeneralBlockchain/covid-19-chest-xray-segmentations-dataset#download-the-dataset)
 
 ## Image Pre-Processing
+
 ![prepross](https://user-images.githubusercontent.com/72918677/172329946-cf2c4a66-10d7-4881-9f91-99b5cefd5056.png)
 
+![tes5 drawio](https://user-images.githubusercontent.com/72918677/172331381-8dbea8ca-3296-42b3-972b-a2571e5890e7.png)
+
 ## Generative Adversarial Network
+![arsitektur UNET](https://user-images.githubusercontent.com/72918677/172331559-0c140da1-5c21-4669-9162-869f61b73023.png)
+![blok konvolusi](https://user-images.githubusercontent.com/72918677/172331579-6d0e980c-099e-4290-af75-bafc6b8163de.png)
+![kritik network](https://user-images.githubusercontent.com/72918677/172331628-bf6df294-df14-4e6f-9801-1b9e0aecd36e.png)
+![blok residual](https://user-images.githubusercontent.com/72918677/172331616-b038455f-0b12-4b23-ad35-4bcfb713866e.png)
+
+## Result
+
 
 ## Refferences
-
+Josep Paul Cohen paper : https://arxiv.org/abs/2003.11597
+pix2pix GAN paper : https://arxiv.org/abs/1611.07004
+U-net paper : https://arxiv.org/abs/1505.04597
 ## Contact us
 * Email: achmad.hanan26@gmail.com
 
