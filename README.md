@@ -28,6 +28,7 @@ The X-ray COVID-19 images dataset used in this research acquired from an open-so
 * [Ground Glass Opacities Annotation](https://github.com/GeneralBlockchain/covid-19-chest-xray-segmentations-dataset#download-the-dataset)
 
 ## Image Pre-Processing
+![prepross](https://user-images.githubusercontent.com/72918677/172329946-cf2c4a66-10d7-4881-9f91-99b5cefd5056.png)
 
 ## Generative Adversarial Network
 
