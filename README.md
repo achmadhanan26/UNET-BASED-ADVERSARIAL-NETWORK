@@ -31,17 +31,17 @@ The X-ray COVID-19 images dataset used in this research acquired from an open-so
 * [Ground Glass Opacities Annotation](https://github.com/GeneralBlockchain/covid-19-chest-xray-segmentations-dataset#download-the-dataset)
 
 ## Image Pre-Processing
-This step is urgently needed before doing any machine learning processing! the reason is becaused the dataset used is obtained from open-source and did not has standards, therefore it causes some main problems such as:
+This step is really needed before doing any machine learning processing! the reason is becaused the dataset used is open-source and could be unstandard, therefore it could causes some main problems such as:
 * Abnormalities in X-Ray COVID-19 images shown by extreme value of image histogram
  ![tes5 drawio](https://user-images.githubusercontent.com/72918677/172331381-8dbea8ca-3296-42b3-972b-a2571e5890e7.png)
 
 * The annotation segmentation by https://github.com/GeneralBlockchain/covid-19-chest-xray-segmentations-dataset only covers the ground glass opacity object for each images. it cant be use for ground truth segmentation yet.
 ![tes4 drawio](https://user-images.githubusercontent.com/72918677/172342753-5e26bb24-e987-4592-9159-69448c9337fd.png)
 
-* The amount of image data presented is very small. Therefore, it needs to implement data augmentation algorithm to avoid failure in learning.
+* Different images size and resolution needs to be resizes before the learning.
 ![prepross](https://user-images.githubusercontent.com/72918677/172329946-cf2c4a66-10d7-4881-9f91-99b5cefd5056.png)
 
-* Different images size and resolution needs to be resizes before the learning.
+* The amount of image data presented is very small. Therefore, it needs to implement data augmentation algorithm to avoid failure in learning.
 
 ## Generative Adversarial Network
 GAN network consists of 2 deep learning network that works in opposite way to another, such as: the first network is trained to create or generate the segmentation based on the given ground truth, therefore it is called the "Generator Network". Meanwhile the second network is, called "Discriminator Network", trained to differentiate the output segmentation from the "Generator Network" from the actual ground truth image, it is done by setting up the new learning function with goals to find the differentiations for each pixel. 
